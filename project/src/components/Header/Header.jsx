@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -39,13 +39,19 @@ const Header = () => {
   ];
   return (
     <div>
+      
       <nav className="flex">
-        <div>
+      <div>
+        <Link to={'/'}>
+          <div className="font-mont">Riten<span>.</span>CV</div>
+        </Link>
+      </div>
+        <div >
         <ul className="flex">
           {navItems.map((item) => (
-            <li key={item.name}>
-              <button onClick={() => navigate(item.path)}>{item.name}</button>
-            </li>)
+            <div className="font-mont border-black" key={item.name} onClick={() => navigate(item.path)}>
+               {item.name}
+            </div>)
              )}
           </ul>
        
