@@ -46,7 +46,7 @@ const Header = () => {
           <div className="font-mont">Riten<span>.</span>CV</div>
         </Link>
       </div>
-        <div >
+        <div className="bg-indigo-950 text-white">
         <ul className="flex">
           {navItems.map((item) => (
             <div className="font-mont border-black" key={item.name} onClick={() => navigate(item.path)}>
