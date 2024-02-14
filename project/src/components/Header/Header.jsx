@@ -29,25 +29,28 @@ const Header = () => {
       path: "/portfolio",
     },
     {
-      name: "Testimonals",
-      path: "/testimonals",
+      name: "Testimonials",
+      path: "/testimonials",
     },
     {
       name: "Contact",
       path: "/contact",
     },
   ];
-
   return (
     <div>
-      <nav>
-        {navItems.map((item) => {
-          <ul>
+      <nav className="flex">
+        <div>
+        <ul className="flex">
+          {navItems.map((item) => (
             <li key={item.name}>
               <button onClick={() => navigate(item.path)}>{item.name}</button>
-            </li>
-          </ul>;
-        })}
+            </li>)
+             )}
+          </ul>
+       
+        </div>
+         
       </nav>
     </div>
   );
