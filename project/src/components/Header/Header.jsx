@@ -38,18 +38,17 @@ const Header = () => {
     },
   ];
   return (
-    <div>
+    <div className="">
       
-      <nav className="flex">
-      <div>
+      <nav className="">
+      
+        <div className="flex bg-indigo-950 text-white justify-center items-center">
         <Link to={'/'}>
-          <div className="font-mont">Riten<span>.</span>CV</div>
+          <div className=" font-mont">Riten<span>.</span>CV</div>
         </Link>
-      </div>
-        <div className="bg-indigo-950 text-white">
         <ul className="flex">
           {navItems.map((item) => (
-            <div className="font-mont border-black" key={item.name} onClick={() => navigate(item.path)}>
+            <div className="flex font-mont border-black items-center" key={item.name} onClick={() => navigate(item.path)}>
                {item.name}
             </div>)
              )}
