@@ -1,8 +1,9 @@
 import React from 'react'
+import MainContainer from '../components/container/MainContainer'
 
 const About = () => {
   return (
-    <div>About</div>
+    <MainContainer>About</MainContainer>
   )
 }
 
