@@ -1,10 +1,8 @@
-import React from 'react'
-import MainContainer from '../components/container/MainContainer'
+import React from "react";
+import MainContainer from "../components/container/MainContainer";
 
 const About = () => {
-  return (
-    <MainContainer>About</MainContainer>
-  )
-}
+  return <MainContainer>About</MainContainer>;
+};
 
-export default About
+export default About;
