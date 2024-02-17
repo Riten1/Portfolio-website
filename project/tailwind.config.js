@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend:{
+      backgroundColor: {
+        'f5f0f0': '#f5f0f0',
+      },
       fontFamily: {
         'mont': ["Montserrat", "sans-serif"]
     }
