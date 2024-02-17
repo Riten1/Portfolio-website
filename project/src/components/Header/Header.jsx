@@ -17,7 +17,7 @@ const Header = () => {
     if(location === ''){
       location = 'about'
     }
-    let classes = 'no-underline flex text-white  pl-10 pr-10 pt-5 pb-5 font-mont cursor-pointer border-y-0 border-x-2 border-l-0 border-white border-solid hover:bg-indigo-400 duration-200'
+    let classes = 'no-underline flex text-white  pl-6 pr-6 pt-5 pb-5 font-mont cursor-pointer border-y-0 border-x-2 border-l-0 border-white border-solid hover:bg-indigo-400 duration-200'
     if(location === type){
       classes += ' bg-indigo-400'
     }else{
@@ -74,9 +74,9 @@ const Header = () => {
       
       <nav className="">
       
-        <div className="flex justify-start items-center pt-2">
+        <div className="flex justify-start items-center pt-9">
         <Link to={'/'} className="no-underline">
-          <div className='font-mont text-3xl text-indigo-950 font-extrabold no-underline pl-6' >Riten<span>.</span>CV</div>
+          <div className='font-mont text-4xl text-indigo-950 font-extrabold no-underline pl-10 mr-12' >Riten<span className="font-mont text-3xl font-extrabold text-indigo-400">.</span>CV</div>
         </Link>
         <ul className="flex">
           {navItems.map((item) => (
