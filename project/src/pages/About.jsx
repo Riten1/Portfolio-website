@@ -2,7 +2,7 @@ import React from "react";
 import MainContainer from "../components/container/MainContainer";
 
 const About = () => {
-  return <MainContainer>About</MainContainer>;
+  return <>About</>;
 };
 
 export default About;
