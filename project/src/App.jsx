@@ -6,6 +6,8 @@ import SuperContainer from "./components/container/SuperContainer";
 import MainContainer from "./components/container/MainContainer";
 import image from './components/images/riten.jpg'
 import icon1 from './components/images/icon_1.png.webp'
+import icon2 from './components/images/icon_2.png.webp'
+
 
 function App() {
   const navigate = useNavigate();
@@ -28,16 +30,39 @@ function App() {
               </div>
            
             </div>
-            <div className="w-full h-full pl-4 pt-12 pr-4 pb-20 overflow-hidden">
+            <div className="w-full h-full pl-10 pt-12 pr-10 pb-20 overflow-hidden">
               <div className="text-3xl font-semibold text-white leading-tight text-center">
                 General Information
               </div>
+
               <ul className="mt-8">
-                <li className="flex items-start justify-start">
+                <li className="flex items-start justify-start mb-4">
                   <div className="w-5 h-5 mr-6">
                     <img src={icon1}></img>
                   </div>
+                  <div className="text-gray-500 text-base leading-tight">
+                    Name:
+                    <span className="text-white"> Riten Gurung</span>
+                  </div>
                 </li>
+
+                <li className="flex items-start justify-start mb-4">
+                  <div className="text-gray-500 text-base leading-tight">
+                    Location: 
+                    <span className="text-white"> Pokhara, Nepal</span>
+                  </div>
+                </li>
+
+                <li className="flex items-start justify-start mb-4">
+                  <div className="w-5 h-5 mr-6">
+                  <img src={icon2}></img>
+                  </div>
+                  <div className="text-gray-500 text-base leading-tight">
+                    Date of Birth:
+                    <span className="text-white"> March 11, 2004</span>
+                  </div>
+                </li>
+                
               </ul>
             </div>
         
