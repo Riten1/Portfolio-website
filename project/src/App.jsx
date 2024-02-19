@@ -35,7 +35,7 @@ function App() {
            
             </div>
             <div className="w-full h-56 pl-10 pt-10 pr-10 pb-20 ">
-              <div className="h-36 overflow-y-scroll scrollbar-thumb-blue-500 scrollbar-track-gray-200">
+              <div className="h-36 overflow-y-scroll scrollbar-thin">
               <div className="text-3xl font-semibold text-white leading-tight text-center">
                 General Information
               </div>
