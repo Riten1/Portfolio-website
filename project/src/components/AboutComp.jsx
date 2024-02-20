@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutComp = () => {
   return (
-    <div className=" items-start justify-end pl-20 pt-20 pr-10 w-3/4">
+    <div className="items-start justify-end pl-20 pt-20 pr-10 w-3/4">
       <div className="text-3xl font-medium text-gray-500 inline-block">
         Frontend Developer
       </div>
