@@ -34,9 +34,9 @@ function App() {
               </div>
            
             </div>
-            <div className="w-full h-56 pl-10 pt-10 pr-10 pb-20 ">
-              <div className="h-36 overflow-y-scroll">
-              <div className="text-3xl font-semibold text-white leading-tight text-center">
+            <div className="w-full h-56 pl-10 pt-10 pr-5 pb-20 ">
+              <div className="h-36 duration-400 overflow-hidden hover:overflow-y-scroll">
+              <div className="inline-block text-3xl font-semibold text-white leading-tight text-center">
                 General Information
               </div>
 
@@ -69,13 +69,12 @@ function App() {
                 </li>
 
                 <li className="flex items-start justify-start mb-4">
-                  <div className="w-5 h-5 mr-6">
+                <div className="w-5 h-5 mr-6">
                   <img src={icon3}></img>
                   </div>
-                  <div className="text-gray-500 text-base leading-tight">
-                    Contactme: 
-                    <Link to='/contact' className="text-gray-500 hover:text-white duration-200"> griten186@gmail.com</Link>
-                  </div>
+                  <Link to='/contact' className="text-gray-500 hover:text-white duration-200">
+                    griten186@gmail.com 
+                  </Link>
                 </li>
 
                 <li className="flex items-start justify-start mb-4">
@@ -100,10 +99,11 @@ function App() {
               </div>
               
             </div>
+            
         
           </div>
-          
-        <Outlet />
+          <Outlet />
+        
         </MainContainer>
       </main>
       <Footer />
