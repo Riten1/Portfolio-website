@@ -35,7 +35,7 @@ function App() {
            
             </div>
             <div className="w-full h-56 pl-10 pt-10 pr-10 pb-20 ">
-              <div className="h-36 overflow-y-scroll scrollbar-thin">
+              <div className="h-36 overflow-y-scroll">
               <div className="text-3xl font-semibold text-white leading-tight text-center">
                 General Information
               </div>
@@ -91,9 +91,9 @@ function App() {
                 <div className="w-5 h-5 mr-6">
                   <img src={icon5}></img>
                   </div>
-                  <div className="text-gray-500 text-base leading-tight">
+                  <Link className="text-gray-500 hover:text-white duration-200">
                     www.riten.dev.com  
-                  </div>
+                  </Link>
                 </li>
                 
               </ul>
