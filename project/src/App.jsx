@@ -11,6 +11,12 @@ import icon2 from './components/images/icon_2.png.webp'
 import icon3 from './components/images/icon_3.png.webp'
 import icon4 from './components/images/icon_4.png.webp'
 import icon5 from './components/images/icon_5.png.webp'
+import fb from './components/images/fb.png'
+import git from './components/images/github.png'
+import insta from './components/images/insta.png'
+import linkdin from './components/images/linkdin.png'
+
+
 
 
 function App() {
@@ -93,6 +99,21 @@ function App() {
                   <Link className="text-gray-500 hover:text-white duration-200">
                     www.riten.dev.com  
                   </Link>
+                </li>
+
+                <li className="flex items-start justify-start gap-x-5 mt-10">
+                  <a href={'https://www.facebook.com/riten.gurung.3'} target="_blank" rel="noopener norefferer" className="ml-20 w-5 rounded hover:bg-white duration-200">
+                  <img src={fb}></img>
+                  </a>
+                  <a href="https://www.instagram.com/_ritengrg/"  target="_blank" rel="noopener norefferer" className="w-5 rounded-xl hover:bg-white duration-200">
+                  <img src={insta}></img>
+                  </a>
+                  <a href="https://github.com/Riten1" target="_blank" rel="noopener norefferer"  className="w-5 rounded-xl hover:bg-white duration-200">
+                  <img src={git}></img>
+                  </a>
+                  <a href="https://www.linkedin.com/in/riten-gurung-29708225a/"  target="_blank" rel="noopener norefferer"  className="w-5 rounded-xl hover:bg-white duration-200">
+                  <img src={linkdin}></img>
+                  </a>
                 </li>
                 
               </ul>
