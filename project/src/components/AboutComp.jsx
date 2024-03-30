@@ -5,63 +5,87 @@ const AboutComp = () => {
   const [creativityCount, setCreativityCount] = useState(0);
   const [intuitionCount, setIntuitionCount] = useState(0)
   const [interactionCount, setInteractionCount] = useState(0)
+  const [luckCount, setLuckCount] = useState(0)
 
   const [style, setStyle] = useState({bg: `conic-gradient(#7d2ae8 3.6deg, #ededed 0deg)`})
+  const [style2, setStyle2] = useState({bg: `conic-gradient(#7d2ae8 3.6deg, #ededed 0deg)`})
+  const [style3, setStyle3] = useState({bg: `conic-gradient(#7d2ae8 3.6deg, #ededed 0deg)`})
+  const [style4, setStyle4] = useState({bg: `conic-gradient(#7d2ae8 3.6deg, #ededed 0deg)`})
+
+
+
   
 
   useEffect(() => {
     const intervalId1 = setInterval(() => {
-      setCreativityCount((prevCount1) => {
-        if (prevCount1 === 90) {
+      setCreativityCount((prevCount) => {
+        if (prevCount === 90) {
           clearInterval(intervalId1);
-          return prevCount1;
+          return prevCount;
         }
         
         const conicGradientStyle = {
-          backgroundImage: `conic-gradient(#7d2ae8 ${prevCount1 * 3.6}deg, #ededed 0deg)`
+          backgroundImage: `conic-gradient(#7d2ae8 ${prevCount * 3.6}deg, #ededed 0deg)`
         };
         setStyle(conicGradientStyle)
-        return prevCount1 + 1
+        return prevCount + 1
         
         ;
       });
     }, 30);
 
     const intervalId2 = setInterval(() => {
-      setIntuitionCount((prevCount2) => {
-        if (prevCount2 === 75) {
+      setIntuitionCount((prevCount) => {
+        if (prevCount === 75) {
           clearInterval(intervalId2);
-          return prevCount2;
+          return prevCount;
         }
         const conicGradientStyle = {
-          backgroundImage: `conic-gradient(#7d2ae8 ${prevCount2 * 3.6}deg, #ededed 0deg)`
+          backgroundImage: `conic-gradient(#7d2ae8 ${prevCount * 3.6}deg, #ededed 0deg)`
         };
-        setStyle(conicGradientStyle)
+        setStyle2(conicGradientStyle)
        
-        return prevCount2 + 1
+        return prevCount + 1
         
         ;
       });
-    }, 30);
+    }, 60);
 
     const intervalId3 = setInterval(() => {
-      setInteractionCount((prevCount3) => {
-        if (prevCount3 === 95) {
+      setInteractionCount((prevCount) => {
+        if (prevCount === 95) {
           clearInterval(intervalId3);
-          return prevCount3;
+          return prevCount;
         }
         
         const conicGradientStyle = {
-          backgroundImage: `conic-gradient(#7d2ae8 ${prevCount3 * 3.6}deg, #ededed 0deg)`
+          backgroundImage: `conic-gradient(#7d2ae8 ${prevCount* 3.6}deg, #ededed 0deg)`
         };
-        setStyle(conicGradientStyle)
-        return prevCount3 + 1
+        setStyle3(conicGradientStyle)
+        return prevCount + 1
+        
+        ;
+      });
+    }, 60);
+
+    const intervalId4 = setInterval(() => {
+      setLuckCount((prevCount) => {
+        if (prevCount === 25) {
+          clearInterval(intervalId4);
+          return prevCount;
+        }
+        
+        const conicGradientStyle = {
+          backgroundImage: `conic-gradient(#7d2ae8 ${prevCount* 3.6}deg, #ededed 0deg)`
+        };
+        setStyle4(conicGradientStyle)
+        return prevCount + 1
         
         ;
       });
     }, 30);
 
-    return () => clearInterval(intervalId1, intervalId2, intervalId3);
+    return () => clearInterval(intervalId1, intervalId2, intervalId3, intervalId4);
   }, []);
   
 
@@ -80,21 +104,35 @@ const AboutComp = () => {
       <p className='text-sm font-medium text-gray-500 leading-7 text-left'>Hi there! 👋 I'm Riten Gurung, a passionate frontend developer based in Nepal. With a love for turning creative ideas into tangible, interactive experiences, I thrive on the challenges and rewards of web development. I believe in the power of combining creativity with precision. Crafting pixel-perfect, visually stunning user interfaces is not just a job for me - it's my passion. My goal is to create user interfaces that go beyond aesthetics – they should feel intuitive and enhance the overall user experience. I pay attention to user feedback and iterate to ensure the best possible interaction. I'm always open to new opportunities, collaborations, and connecting with like-minded individuals. Feel free to reach out on LinkedIn, explore my GitHub repositories, or drop me an email. Let's create something remarkable together!</p>
       
       </div>
-      <div className="flex w-96 p-12 rounded-xl gap-row-7 flex-col items-center">
+      <div className="grid grid-cols-2 gap-x-96 gap-y-20 w-96 p-12 ml-16 rounded-xl items-center">
+        <div>
         <div style={style} className={`relative h-56 w-56 rounded-full flex items-center justify-center before:absolute before:rounded-full before:bg-indigo-400 before:w-50 before:h-50`}>
           <span className="relative text-5xl h-48 font-bold text-indigo-950 bg-f5f0f0 pl-12 pr-12 pt-14 pb-14 rounded-full">{creativityCount}%</span>
         </div>
         <span className="text-base font-bold text-indigo-950">Creativity</span>
 
-        <div style={style} className={`relative h-56 w-56 rounded-full flex items-center justify-center before:absolute before:rounded-full before:bg-indigo-400 before:w-50 before:h-50`}>
+        <div style={style2} className={`relative h-56 w-56 rounded-full flex items-center justify-center before:absolute before:rounded-full before:bg-indigo-400 before:w-50 before:h-50`}>
           <span className="relative text-5xl h-48 font-bold text-indigo-950 bg-f5f0f0 pl-12 pr-12 pt-14 pb-14 rounded-full">{intuitionCount}%</span>
         </div>
-        <span className="text-base font-bold text-indigo-950">Intuition</span>
+        <span className="text-center font-bold text-indigo-950">Intuition</span>
+       
+        </div>
+       
 
-        <div style={style} className={`relative h-56 w-56 rounded-full flex items-center justify-center before:absolute before:rounded-full before:bg-indigo-400 before:w-50 before:h-50`}>
+<div>
+<div style={style3} className={`relative h-56 w-56 rounded-full flex items-center justify-center before:absolute before:rounded-full before:bg-indigo-400 before:w-50 before:h-50`}>
           <span className="relative text-5xl h-48 font-bold text-indigo-950 bg-f5f0f0 pl-12 pr-12 pt-14 pb-14 rounded-full">{interactionCount}%</span>
         </div>
         <span className="text-base font-bold text-indigo-950">Interaction</span>
+
+        <div style={style4} className={`relative h-56 w-56 rounded-full flex items-center justify-center before:absolute before:rounded-full before:bg-indigo-400 before:w-50 before:h-50`}>
+          <span className="relative text-5xl h-48 font-bold text-indigo-950 bg-f5f0f0 pl-12 pr-12 pt-14 pb-14 rounded-full">{luckCount}%</span>
+        </div>
+        <span className="text-base font-bold text-indigo-950">Pure Luck</span>
+
+</div>
+
+       
       </div>
       </div>
 
